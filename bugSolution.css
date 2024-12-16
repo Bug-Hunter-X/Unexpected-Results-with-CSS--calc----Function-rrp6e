@@ -1,0 +1,15 @@
+The issue lies in the spacing and unit consistency within the `calc()` expression.  Incorrect spacing around the `+` and `-` operators, or a mix of units (e.g., pixels and percentages), will often lead to unexpected behavior.
+
+**Corrected Code (bugSolution.css):**
+
+```css
+div {
+  width: calc(50% + 20px);
+  height: calc(100vh - 50px);
+}
+```
+
+**Explanation:**
+
+* Ensure spaces are present around the `+` and `-` operators within the `calc()` function. 
+* Maintain consistent units throughout the calculation.  Mixing units without explicit conversion can lead to errors.
